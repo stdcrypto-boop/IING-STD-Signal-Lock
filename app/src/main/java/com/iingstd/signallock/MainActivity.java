@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
  final int green=0xff36e8bd;
  final Runnable tick=new Runnable(){public void run(){refresh();h.postDelayed(this,3000);}};
  public void onCreate(Bundle b){super.onCreate(b);
- ScrollView scroll=new ScrollView(this);root=new LinearLayout(this);root.setOrientation(1);root.setPadding(24,32,24,32);root.setBackgroundColor(0xff101820);scroll.addView(root);setContentView(scroll);
+ ScrollView scroll=new ScrollView(this);root=new LinearLayout(this);root.setOrientation(LinearLayout.VERTICAL);root.setPadding(24,32,24,32);root.setBackgroundColor(0xff101820);scroll.addView(root);setContentView(scroll);
  label("IING STD SIGNAL LOCK",26);label("NON-ROOT • LIVE NETWORK",14);
  sim=new Spinner(this);root.addView(sim);stats=label("Memuat jaringan…",18);
  button("Izinkan akses sinyal",()->requestPermissions(new String[]{Manifest.permission.READ_PHONE_STATE,Manifest.permission.ACCESS_FINE_LOCATION,Manifest.permission.ACCESS_COARSE_LOCATION},1));
