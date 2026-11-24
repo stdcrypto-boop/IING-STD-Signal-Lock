@@ -11,4 +11,4 @@ User verified EngineerMode and BandMode SIM2 are accessible via dialer. Applying
 - Document recovery to automatic network settings.
 
 ## Status
-Planning only; implementation and device tests pending.
+Initial Android app implemented; build #5 passed assembleDebug and lintDebug (run 45296327466). Subsequent commit b589d07 adds direct BandMode activity attempt with fallback, recovery guidance, signal indicator and system bar insets; CI and physical device tests pending. Update check currently opens GitHub release page only. Next: stable signing configuration, verified APK download and installer, release publishing, device validation of SIM selection and modem access. Do not distribute debug APK as final update-compatible release.
